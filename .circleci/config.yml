@@ -80,6 +80,7 @@ jobs:
               return 1
             fi
       - destroy_environment
+        when: on_fail
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
